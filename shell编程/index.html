@@ -272,7 +272,7 @@
     </div>
 </div>
 <input type="hidden" id="yelog_site_posts_number" value="47">
-<input type="hidden" id="yelog_site_word_count" value="171.3k">
+<input type="hidden" id="yelog_site_word_count" value="170.9k">
 <div style="display: none">
     <span id="busuanzi_value_site_uv"></span>
     <span id="busuanzi_value_site_pv"></span>
@@ -806,12 +806,12 @@
     </div>
     <div class="article-meta">
         
-            发布时间 : <time class="date" title='最后更新: 2022-03-07 19:45:04'>2022-03-07 20:24</time>
+            发布时间 : <time class="date" title='最后更新: 2022-03-07 19:54:39'>2022-03-07 20:24</time>
         
     </div>
     <div class="article-meta">
         
-        <span>字数:4.5k</span>
+        <span>字数:4.1k</span>
         
         
         <span id="busuanzi_container_page_pv">
@@ -1091,49 +1091,8 @@ echo $UID     #输出 1674</code></pre><h2 id="2-4-shell 运算符"><a href="#2-
 </ul>
 <p><img src="https://image--1.oss-cn-shenzhen.aliyuncs.com/image-20220307194350402.png" alt=""></p>
 <p>另外：还支持自增 ++ 和自减–。</p>
-<h3 id="2-4-2- 逻辑运算符"><a href="#2-4-2- 逻辑运算符" class="headerlink" title="2.4.2 逻辑运算符"></a>2.4.2 逻辑运算符</h3><table>
-<thead>
-<tr>
-<th align="left">运算符</th>
-<th align="left">说明</th>
-<th align="left">举例</th>
-</tr>
-</thead>
-<tbody><tr>
-<td align="left">&amp;&amp;</td>
-<td align="left">逻辑的 AND</td>
-<td align="left"><code>[[12 -lt 100 &amp;&amp; 123 -gt 100]]</code>返回 false</td>
-</tr>
-<tr>
-<td align="left">||</td>
-<td align="left">逻辑的 OR</td>
-<td align="left">[[12 -lt 100 || 200 -gt 100]]  返回 true</td>
-</tr>
-</tbody></table>
-<h3 id="2-4-3- 布尔运算符"><a href="#2-4-3- 布尔运算符" class="headerlink" title="2.4.3 布尔运算符"></a>2.4.3 布尔运算符</h3><table>
-<thead>
-<tr>
-<th align="left">运算符</th>
-<th align="left">说明</th>
-<th align="left">举例</th>
-</tr>
-</thead>
-<tbody><tr>
-<td align="left">!</td>
-<td align="left">非运算，表达式为 true 则返回 false，否则返回 true。</td>
-<td align="left"><code>[! false]</code> 返回 true。</td>
-</tr>
-<tr>
-<td align="left">-o</td>
-<td align="left">或运算，有一个表达式为 true 则返回 true。</td>
-<td align="left"><code>[$a -lt 20 -o $b -gt 100]</code> 返回 true。</td>
-</tr>
-<tr>
-<td align="left">-a</td>
-<td align="left">与运算，两个表达式都为 true 才返回 true。</td>
-<td align="left"><code>[$a -lt 20 -a $b -gt 100]</code>返回 false。</td>
-</tr>
-</tbody></table>
+<h3 id="2-4-2- 逻辑运算符"><a href="#2-4-2- 逻辑运算符" class="headerlink" title="2.4.2 逻辑运算符"></a>2.4.2 逻辑运算符</h3><p><img src="https://image--1.oss-cn-shenzhen.aliyuncs.com/image-20220307195033890.png" alt=""></p>
+<h3 id="2-4-3- 布尔运算符"><a href="#2-4-3- 布尔运算符" class="headerlink" title="2.4.3 布尔运算符"></a>2.4.3 布尔运算符</h3><p><img src="https://image--1.oss-cn-shenzhen.aliyuncs.com/image-20220307195130426.png" alt=""></p>
 <h2 id="2-5- 条件测试"><a href="#2-5- 条件测试" class="headerlink" title="2.5 条件测试"></a>2.5 条件测试 </h2><p>shell 条件测试一共就三种：<strong> 文件测试 </strong>，<strong> 数值比较 </strong>，<strong> 字符串比较</strong></p>
 <p>条件测试分为三种用法，但作用是一样的：</p>
 <ul>
@@ -1145,50 +1104,7 @@ echo $UID     #输出 1674</code></pre><h2 id="2-4-shell 运算符"><a href="#2-
 <p>值得注意的是：<strong>对于条件测试，其中的条件表达式 condition 为真返回 0，假返回 1。这与其他语言不同！</strong></p>
 <p>在 shell 中，命令语句执行完，<strong>其退出状态码，0（成功）表示真，非 0（失败）表示假</strong></p>
 <p><strong>但是用 if [] 的判断条件 if [ 1]时，任何数字都返回真。</strong></p>
-<h3 id="2-5-1- 文件测试"><a href="#2-5-1- 文件测试" class="headerlink" title="2.5.1 文件测试"></a>2.5.1 文件测试</h3><table>
-<thead>
-<tr>
-<th>用法</th>
-<th>含义</th>
-</tr>
-</thead>
-<tbody><tr>
-<td>[-e dir|file]</td>
-<td>如果存在，则为真</td>
-</tr>
-<tr>
-<td>[-d dir]</td>
-<td>如果存在且为目录，则为真</td>
-</tr>
-<tr>
-<td>[-f file]</td>
-<td>如果存在且为文件，则为真</td>
-</tr>
-<tr>
-<td>[-r file]</td>
-<td>如果存在且为可读文件，则为真</td>
-</tr>
-<tr>
-<td>[-x file]</td>
-<td>如果存在且为可执行的文件，则为真</td>
-</tr>
-<tr>
-<td>[-w file]</td>
-<td>如果存在且为可写的文件，则为真</td>
-</tr>
-<tr>
-<td>[-L file]</td>
-<td>如果存在且为链接文件，则为真</td>
-</tr>
-<tr>
-<td>[-b file]</td>
-<td>如果存在且为设备文件，则为真</td>
-</tr>
-<tr>
-<td>[-c file]</td>
-<td>如果存在且为字符文件，则为真</td>
-</tr>
-</tbody></table>
+<h3 id="2-5-1- 文件测试"><a href="#2-5-1- 文件测试" class="headerlink" title="2.5.1 文件测试"></a>2.5.1 文件测试</h3><p><img src="https://image--1.oss-cn-shenzhen.aliyuncs.com/image-20220307195210982.png" alt=""></p>
 <p>用法示例：</p>
 <pre><code class="shell">[! -d /home/test] &amp;&amp; makdir /home/test     #目录不存在就创建
 
@@ -1198,38 +1114,7 @@ test -d /home/test
 echo $?
 0                     #在 shell 中，为真的退出状态码为 0，为假时状态码为 1</code></pre>
 <h3 id="2-5-2- 数值比较"><a href="#2-5-2- 数值比较" class="headerlink" title="2.5.2 数值比较"></a>2.5.2 数值比较 </h3><p> 关系运算符只支持数字，不支持字符串，除非字符串的值是数字。</p>
-<table>
-<thead>
-<tr>
-<th>用法</th>
-<th>含义</th>
-</tr>
-</thead>
-<tbody><tr>
-<td>[10 -gt 1]</td>
-<td>10 大于 1</td>
-</tr>
-<tr>
-<td>[1 -lt 10]</td>
-<td>1 小于 10</td>
-</tr>
-<tr>
-<td>[10 -eq 10]</td>
-<td>10 等于 10</td>
-</tr>
-<tr>
-<td>[1 -ne 10]</td>
-<td>1 不等于 10</td>
-</tr>
-<tr>
-<td>[10 -ge 1]</td>
-<td>10 大于等于 1</td>
-</tr>
-<tr>
-<td>[1 -le 10]</td>
-<td>1 小于等于 10</td>
-</tr>
-</tbody></table>
+<p><img src="https://image--1.oss-cn-shenzhen.aliyuncs.com/image-20220307195248494.png" alt=""></p>
 <p>用法示例：</p>
 <pre><code class="shell">disk_use=`df -Th`|grep &#39;/$&#39;|awk &#39;&#123;print $(NF-1)&#125;&#39;|awk -F &quot;%&quot; &#39;&#123;print $1&#125;&#39;  #磁盘利用率
 user=Alice
@@ -1239,38 +1124,7 @@ if [$disk_use -ge 90]; then
 fi</code></pre>
 <p>数值比较还支持 C 语言风格：如 <code>((1&lt;10))，((1&lt;=10))</code> 这种，这里不多做介绍。</p>
 <h3 id="2-5-3- 字符串比较"><a href="#2-5-3- 字符串比较" class="headerlink" title="2.5.3 字符串比较"></a>2.5.3 字符串比较 </h3><p><strong> 字符串变量要使用双引号引起来</strong></p>
-<table>
-<thead>
-<tr>
-<th>用法</th>
-<th>含义</th>
-</tr>
-</thead>
-<tbody><tr>
-<td><code>[&quot;$a&quot; = &quot;$b&quot;]</code></td>
-<td>变量 a 等于变量 b，则为真</td>
-</tr>
-<tr>
-<td><code>[&quot;$a&quot; == &quot;$b&quot;]</code></td>
-<td>变量 a 等于变量 b，则为真</td>
-</tr>
-<tr>
-<td><code>[&quot;$a&quot; != &quot;$b&quot;]</code></td>
-<td>变量 a 不等于变量 b，则为真</td>
-</tr>
-<tr>
-<td><code>[-z &quot;$a&quot;]</code></td>
-<td>变量 a 的字符串的长度为零，则为真</td>
-</tr>
-<tr>
-<td><code>[-n &quot;$a&quot;]</code></td>
-<td>变量 a 的字符串的长度不为零，则为真</td>
-</tr>
-<tr>
-<td>[$a]</td>
-<td>变量 a 的字符串字符串不为空，则为真。</td>
-</tr>
-</tbody></table>
+<p><img src="https://image--1.oss-cn-shenzhen.aliyuncs.com/image-20220307195333214.png" alt=""></p>
 <p>用法示例：</p>
 <pre><code class="shell">[aaa = abb];echo $?            #输出 1   1 为假
 [&quot;aaa&quot; = &quot;aaa&quot;];echo $?        #输出 0   0 为真
