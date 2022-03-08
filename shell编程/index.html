@@ -806,7 +806,7 @@
     </div>
     <div class="article-meta">
         
-            发布时间 : <time class="date" title='最后更新: 2022-03-08 10:25:05'>2022-03-07 20:24</time>
+            发布时间 : <time class="date" title='最后更新: 2022-03-08 10:45:08'>2022-03-07 20:24</time>
         
     </div>
     <div class="article-meta">
@@ -998,8 +998,8 @@ file=$path/xor.txt</code></pre><p>不加引号特点：</p>
 <p><code>$&#123;#str:2&#125;</code>，从第 3 个字符开始，截取后面所有字符</p>
 <p><code>$&#123;#str:2:-1&#125;</code>，从左往右第 3 位开始截取，从右往左截取第一位</p>
 </li>
-<li><p>查找子串：`expr index “$str” xy`，查找字符 <strong>x</strong>或 <strong>y</strong> 的位置(哪个字母先出现就计算哪个)</p>
-</li>
+<li><p>查找子串：</p>
+<pre><code>expr index &quot;$str&quot; xy    #查找字符 x 或 y 的位置(哪个字母先出现就计算哪个)</code></pre></li>
 <li><p>拼接字符串：”hello, “$name” !”，直接写在一块就行。</p>
 </li>
 <li><p>匹配删除：</p>
